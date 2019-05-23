@@ -12,5 +12,9 @@
       "../common/mixins",
       "./mixins"
     ]
+  },
+  "HttpErrorSimulator": {
+    "dataSource": null,
+    "public": true
   }
 }
