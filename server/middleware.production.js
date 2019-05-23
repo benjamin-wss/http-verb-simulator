@@ -5,8 +5,8 @@ return {
     "strong-error-handler": {
       params: {
         debug: false,
-        log: false
-      }
-    }
-  }
+        log: false,
+      },
+    },
+  },
 };
