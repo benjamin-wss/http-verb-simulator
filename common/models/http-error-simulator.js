@@ -1,7 +1,7 @@
-"use strict";
+'use strict';
 
 module.exports = HttpErrorSimulator => {
-  function generalErrorGenerator({ errorCode, callback }) {
+  function generalErrorGenerator({errorCode, callback}) {
     const errorMessage = `Simulated ${errorCode} error`;
 
     const error = new Error(errorMessage);
@@ -11,22 +11,22 @@ module.exports = HttpErrorSimulator => {
   }
 
   HttpErrorSimulator.httpGetError = (errorCode, callback) => {
-    generalErrorGenerator({ errorCode, callback });
+    generalErrorGenerator({errorCode, callback});
   };
 
   HttpErrorSimulator.httpPostError = (errorCode, body, callback) => {
-    generalErrorGenerator({ errorCode, callback });
+    generalErrorGenerator({errorCode, callback});
   };
 
   HttpErrorSimulator.httpPutError = (errorCode, body, callback) => {
-    generalErrorGenerator({ errorCode, callback });
+    generalErrorGenerator({errorCode, callback});
   };
 
   HttpErrorSimulator.httpPatchError = (errorCode, body, callback) => {
-    generalErrorGenerator({ errorCode, callback });
+    generalErrorGenerator({errorCode, callback});
   };
 
   HttpErrorSimulator.httpDeleteError = (errorCode, body, callback) => {
-    generalErrorGenerator({ errorCode, callback });
+    generalErrorGenerator({errorCode, callback});
   };
 };
