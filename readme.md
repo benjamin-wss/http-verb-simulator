@@ -19,7 +19,7 @@ There are 2 ways you can do this:
 
 If you want to use VSCode, you can see the configurations in the `.vscode` folder. You can use that to trigger debug in both development and production modes.
 
-Head over to `http://localhost:3000/explorer/#/`.
+Head over to `http://localhost:3001/explorer/#/`.
 
 Over there you will see this:
 
