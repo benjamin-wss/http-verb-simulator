@@ -9,6 +9,15 @@
             "request": "launch",
             "name": "Launch Program",
             "program": "${workspaceFolder}\\server\\server.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program - PROD",
+            "program": "${workspaceFolder}\\server\\server.js",
+            "env": {
+                "NODE_ENV": "production",
+            }
         }
     ]
 }
