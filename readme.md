@@ -1,6 +1,6 @@
 # HTTP Error Simulator
 
-This is a simple application built to simulate API behavior.
+This is a simple application built to simulate API behavior for a Loopback API server.
 
 Currently it only supports HTTP errors to aid front end developers to test their error handling.
 
@@ -12,7 +12,12 @@ Run the following command `npm install`.
 
 ## How to use
 
-There are 2 ways you can do this, either by just running `npm start` or if you want to use VSCode, you can see the configurations in the `.vscode` folder. You can use that to trigger debug in both development and production modes.
+There are 2 ways you can do this:
+
+1. Run `npm start` will run the APIs in development mode to simulate development mode HTTP response behavior.
+1. Run `npm run start:production` will run the APIs in development mode to simulate production mode HTTP response behavior.
+
+If you want to use VSCode, you can see the configurations in the `.vscode` folder. You can use that to trigger debug in both development and production modes.
 
 Head over to `http://localhost:3000/explorer/#/`.
 
