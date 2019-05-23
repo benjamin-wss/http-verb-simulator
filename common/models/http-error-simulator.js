@@ -17,4 +17,16 @@ module.exports = HttpErrorSimulator => {
   HttpErrorSimulator.httpPostError = (errorCode, body, callback) => {
     generalErrorGenerator({ errorCode, callback });
   };
+
+  HttpErrorSimulator.httpPutError = (errorCode, body, callback) => {
+    generalErrorGenerator({ errorCode, callback });
+  };
+
+  HttpErrorSimulator.httpPatchError = (errorCode, body, callback) => {
+    generalErrorGenerator({ errorCode, callback });
+  };
+
+  HttpErrorSimulator.httpDeleteError = (errorCode, body, callback) => {
+    generalErrorGenerator({ errorCode, callback });
+  };
 };

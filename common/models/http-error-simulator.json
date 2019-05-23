@@ -57,6 +57,90 @@
         "verb": "POST",
         "path": "/:errorCode"
       }
+    },
+    "httpPutError": {
+      "accepts": [
+        {
+          "arg": "errorCode",
+          "type": "number",
+          "required": true,
+          "http": {
+            "source": "path"
+          }
+        },
+        {
+          "arg": "postBody",
+          "type": "object",
+          "required": false,
+          "http": {
+            "source": "body"
+          }
+        }
+      ],
+      "returns": {
+        "arg": "result",
+        "type": "object"
+      },
+      "http": {
+        "verb": "PUT",
+        "path": "/:errorCode"
+      }
+    },
+    "httpPatchError": {
+      "accepts": [
+        {
+          "arg": "errorCode",
+          "type": "number",
+          "required": true,
+          "http": {
+            "source": "path"
+          }
+        },
+        {
+          "arg": "postBody",
+          "type": "object",
+          "required": false,
+          "http": {
+            "source": "body"
+          }
+        }
+      ],
+      "returns": {
+        "arg": "result",
+        "type": "object"
+      },
+      "http": {
+        "verb": "PATCH",
+        "path": "/:errorCode"
+      }
+    },
+    "httpDeleteError": {
+      "accepts": [
+        {
+          "arg": "errorCode",
+          "type": "number",
+          "required": true,
+          "http": {
+            "source": "path"
+          }
+        },
+        {
+          "arg": "postBody",
+          "type": "object",
+          "required": false,
+          "http": {
+            "source": "body"
+          }
+        }
+      ],
+      "returns": {
+        "arg": "result",
+        "type": "object"
+      },
+      "http": {
+        "verb": "DELETE",
+        "path": "/:errorCode"
+      }
     }
   }
 }
