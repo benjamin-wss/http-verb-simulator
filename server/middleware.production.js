@@ -1,6 +1,6 @@
 'use strict';
 
-return {
+module.exports = {
   'final:after': {
     'strong-error-handler': {
       params: {
