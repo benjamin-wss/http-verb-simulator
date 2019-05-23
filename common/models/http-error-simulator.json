@@ -29,6 +29,34 @@
         "verb": "GET",
         "path": "/:errorCode"
       }
+    },
+    "httpPostError": {
+      "accepts": [
+        {
+          "arg": "errorCode",
+          "type": "number",
+          "required": true,
+          "http": {
+            "source": "path"
+          }
+        },
+        {
+          "arg": "postBody",
+          "type": "object",
+          "required": false,
+          "http": {
+            "source": "body"
+          }
+        }
+      ],
+      "returns": {
+        "arg": "result",
+        "type": "object"
+      },
+      "http": {
+        "verb": "POST",
+        "path": "/:errorCode"
+      }
     }
   }
 }
